@@ -29,7 +29,7 @@ func main() {
 		log.Fatalf("failed to retrieve EC2 instance ID: %s", err)
 	}
 
-	log.With(log.Fields{
+	log.WithFields(log.Fields{
 		"ec2-instance-id": ec2InstanceID,
 	}).Info("started")
 

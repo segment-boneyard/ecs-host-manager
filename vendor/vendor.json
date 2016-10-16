@@ -1,0 +1,49 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "Ur88QI//9Ue82g83qvBSakGlzVg=",
+			"path": "github.com/apex/log",
+			"revision": "4ea85e918cc8389903d5f12d7ccac5c23ab7d89b",
+			"revisionTime": "2016-09-05T15:13:04Z"
+		},
+		{
+			"checksumSHA1": "o5a5xWoaGDKEnNy0W7TikB66lMc=",
+			"path": "github.com/apex/log/handlers/text",
+			"revision": "4ea85e918cc8389903d5f12d7ccac5c23ab7d89b",
+			"revisionTime": "2016-09-05T15:13:04Z"
+		},
+		{
+			"checksumSHA1": "jui3diQLfg8pTuW78bXFq6XOLRQ=",
+			"path": "github.com/segmentio/ecs-host-manager",
+			"revision": "675cce8511f90eb34f2631bbbf9e30620e24493d",
+			"revisionTime": "2016-10-16T22:43:54Z"
+		},
+		{
+			"checksumSHA1": "exBQJLaBXogorrNlmjdaVifVdpc=",
+			"path": "github.com/segmentio/ecs-logs-go",
+			"revision": "49d047bbc69ccb12dfc6ad91e763d8f817550012",
+			"revisionTime": "2016-07-26T19:29:10Z"
+		},
+		{
+			"checksumSHA1": "bdRkX6PW5jL8fPYFPKRIkxctTRU=",
+			"path": "github.com/segmentio/ecs-logs-go/apex",
+			"revision": "49d047bbc69ccb12dfc6ad91e763d8f817550012",
+			"revisionTime": "2016-07-26T19:29:10Z"
+		},
+		{
+			"checksumSHA1": "9C4Av3ypK5pi173F76ogJT/d8x4=",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "1ed0c38df5ad473c1d85c1f6490fb2868601a1d3",
+			"revisionTime": "2016-10-13T23:31:06Z"
+		},
+		{
+			"checksumSHA1": "e6tx+mrbPNlzXbr1VErnBPY+vmQ=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "002cbb5f952456d0c50e0d2aff17ea5eca716979",
+			"revisionTime": "2016-10-16T18:36:00Z"
+		}
+	],
+	"rootPath": "github.com/segmentio/ecs-host-manager"
+}
