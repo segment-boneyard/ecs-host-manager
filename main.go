@@ -57,8 +57,8 @@ func main() {
 	// - get the autoscaling configuration
 	// - compare the current launch configurations and the set on the instance
 	// - when the configs are different,
-	//   * spawn a new host
-	//   * waits for the host to start and pass health checks
+	//   * start a new host
+	//   * wait for the host to start and pass health checks
 	//   * move tasks off of the old EC2 instance
 	//   * replace the instance in the autoscaling group
 	//   * terminate
@@ -85,9 +85,12 @@ func main() {
 			continue
 		}
 
-		log.Info("launch configurations differ, starting upgrade process")
+		log.WithFields(log.Fields{
+			"old": instanceInfo.launchConfiguration,
+			"new": groupInfo.launchConfiguration,
+		}).Info("launch configurations differ, starting upgrade process")
 
-		if err = upgrade(session, instanceId, *groupInfo.group.AutoScalingGroupName); err != nil {
+		if err = upgrade(session, instanceId, groupInfo); err != nil {
 			log.WithError(err).Error("failed to replace the outdated EC2 instance")
 		} else {
 			ticker.Stop()
@@ -96,7 +99,7 @@ func main() {
 	}
 }
 
-func upgrade(session *session.Session, instanceId string, autoScalingGroup string) (err error) {
+func upgrade(session *session.Session, instanceId string, info autoScalingInfo) (err error) {
 	// TODO:
 	return
 }

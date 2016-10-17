@@ -5,6 +5,8 @@ import (
 	"net/http"
 	"strings"
 	"unicode"
+
+	"github.com/aws/aws-sdk-go/service/ec2"
 )
 
 func getInstanceId() (id string, err error) {
@@ -51,5 +53,9 @@ func getAvailabilityZone() (az string, err error) {
 	}
 
 	az = strings.TrimSpace(string(b))
+	return
+}
+
+func launchInstance(launchConfiguration string) (instance *ec2.Instance, err error) {
 	return
 }
