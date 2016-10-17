@@ -1,4 +1,4 @@
-ecs-host-manager
+ecs-host-manager (EXPERIMENTAL)
 ================
 
 ecs-host-manager is an agent taking care of rolling out new EC2 instances in
